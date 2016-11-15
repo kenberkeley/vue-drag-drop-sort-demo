@@ -1,2 +1,2 @@
-# Vue Demo : Drag + Drop + Sort
-<a class="jsbin-embed" href="http://jsbin.com/gupebi/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.40.2"></script>
+# Vue Demo : Drag + Drop + Sort ([JS Bin](http://jsbin.com/gupebi/embed?html,js,output))
+Thanks to [@bramblex](https://github.com/bramblex), the original post is [here](https://www.v2ex.com/t/300047)
