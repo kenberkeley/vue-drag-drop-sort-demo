@@ -6,8 +6,8 @@
     @dragover.prevent
     @dragstart.stop="handleDragStart"
     @drop.stop="handleDrop"
-    @dragenter.stop="handleDropEnter"
-    @dragleave.stop="handleDropLeave"
+    @dragenter.stop="handleDragEnter"
+    @dragleave.stop="handleDragLeave"
     @dragend.prevent="handleDragEnd">
     {{ node.name }}
     <div v-if="children && children.length" class="tree-node-children">
@@ -78,11 +78,11 @@ export default {
       if (!this.node.children) this.$set('node.children', []) // 须用 $set 引入双向绑定
       this.node.children.push(this.vm.node)
     },
-    handleDropEnter () { // 允许拖放才会显示样式
+    handleDragEnter () { // 允许拖放才会显示样式
       if (!this.isAllowToDrop) return
       this.$el.style.backgroundColor = 'yellow'
     },
-    handleDropLeave () {
+    handleDragLeave () {
       this.clearBgColor()
     },
     handleDragEnd () {
